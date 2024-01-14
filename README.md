@@ -236,6 +236,7 @@ ifconfig -a
   sudo nvim /var/www/your.domain.name/config/config.php
   ```
 + On trusted_domains add your public IP
+  
 ![trusted.png](pictures/trusted.png)
 
 #### Configure your domain

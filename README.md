@@ -27,7 +27,7 @@ sudo apt install neovim wget mariadb-server php php-apcu php-bcmath php-cli php-
 ```bash
 sudo nvim /etc/hostname
 ```
-![hostname.png](../_resources/hostname.png)
+![hostname.png](pictures/hostname.png)
 ```bash
 sudo nvim /etc/hosts
 ```

@@ -1,4 +1,4 @@
-#Make your own self-hosted cloud storage
+# Make your own self-hosted cloud storage
 ## Benefits
 - More privacy and security
 - Cost-Effectiveness

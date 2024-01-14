@@ -31,7 +31,7 @@ sudo nvim /etc/hostname
 ```bash
 sudo nvim /etc/hosts
 ```
-![hosts.png](../_resources/hosts.png)
+![hosts.png](pictures/hosts.png)
 + Restart your server to apply the changes made thus far
 
 ```bash
@@ -188,7 +188,7 @@ sudo systemctl restart apache2
 ### Set-up Nextcloud web server
 
 - When you first enter the page you should see something like this
-![admin.png](../_resources/admin.png)
+![admin.png](pictures/admin.png)
 - Enter the following information into the respective boxes
 ```txt
 Username --> Your Username
@@ -213,7 +213,7 @@ Database name --> nextcloud
 ifconfig -a
 ```
 
-![ifconfig.png](../_resources/ifconfig.png)
+![ifconfig.png](pictures/ifconfig.png)
 
 + Next, enter your router portal to configure the port forwarding. Enter the IP address and select 'web-server' at port 80, then enable it
 + To check if your port 80 is open, run the following command
@@ -224,7 +224,7 @@ ifconfig -a
 + Check if the nextcloud page is accessible typing your public IP on the web browser
   - You should see something like this
 
-![untrusted.png](../_resources/untrusted.png)
+![untrusted.png](pictures/untrusted.png)
 
 
 #### *Extra*
@@ -235,7 +235,7 @@ ifconfig -a
   sudo nvim /var/www/your.domain.name/config/config.php
   ```
 + On trusted_domains add your public IP
-![trusted.png](../_resources/trusted.png)
+![trusted.png](pictures/trusted.png)
 
 #### Configure your domain
 
@@ -257,7 +257,7 @@ sudo nvim /var/www/your.domain.name/config/config.php
 ```
 
 - Add your domain name to the `trusted_domains` array
-![domain_trusted.png](../_resources/domain_trusted.png)
+![domain_trusted.png](pictures/domain_trusted.png)
 
 + Now, you can access your Nextcloud through your domain
 

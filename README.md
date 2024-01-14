@@ -6,7 +6,7 @@
 - More Control and Customisation
 
 ## Prerequisites
-- Own a computer that could run Linux (x86_x64)
+- A computer running Ubuntu or any Debian flavor.
 - Check if your ISP allows you to enable port-forward [Optional]
 - Own a domain [Optional]
 
@@ -53,7 +53,7 @@ systemctl status mariadb
 ```bash
 sudo mysql_secure_installation
 ````
-- Then you should a several question. Answer following the provided input below
+- Then you should see a several question. Answer following the provided input below
 ```
 Password prompt --> Click Enter key
 Switch to unix_socket_auth [Y/n] --> n

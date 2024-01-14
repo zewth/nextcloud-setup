@@ -250,6 +250,7 @@ ifconfig -a
 - Once you've acquired a domain, proceed to the Advanced DNS settings and establish a host record
 - In the ```IP Address``` section, input your public IP address
 - Then, on the ```HOST``` section put "@"
+  ![namecheap_host.png](pictures/namecheap_host.png)
 - Proceed to edit the `config.php` file
 
 ```Bash

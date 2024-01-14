@@ -248,7 +248,7 @@ ifconfig -a
   	- [Squarespace](https://domains.squarespace.com)
   	- [Name.com](https://www.name.com)
 
-  ##### Set-up namecheap
+#### Set-up namecheap
 - Once you've acquired a domain, proceed to the Advanced DNS settings and establish a host record
 - In the ```IP Address``` section, input your public IP address
 - Then, on the ```HOST``` section put "@"

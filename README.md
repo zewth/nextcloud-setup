@@ -11,15 +11,15 @@
 - Own a domain [Optional]
 
 ## Initial server setup
-#### Update your linux distribution
+#### Update your archlinux distribution
 ```Bash
-sudo apt update
-sudo apt full-upgrade
-sudo apt autoremove
+sudo pacman -Syu
+sudo pacman -Qdtq | pacman -Rs -
+sudo pacman -Sc
 ```
 - Install all necessary packages (some may be optional based on your requirements)
 ```bash
-sudo apt install neovim wget mariadb-server php php-apcu php-bcmath php-cli php-common php-curl php-gd php-gmp php-imagick php-intl php-mbstring php-mysql php-zip php-xml unzip nmap
+sudo pacman -S neovim wget mariadb php php-apcu php-bcmath php-cli php-common php-curl php-gd php-gmp php-imagick php-intl php-mbstring php-mysql php-zip php-xml unzip nmap
 ```
 
 #### Update your hostname (Optional)
@@ -66,6 +66,14 @@ Reload privileges tables now [Y/n] --> Y
 ```
 
 ### Setting up the Nextcloud Database
+- Run the following command before starting the mariadb.service:
+```bash
+mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+```
+- Now you can start the ```mariadb.service```
+```bash
+sudo systemctl start example.service
+```
 + Access to MariaDB
 ```bash
 sudo mariadb

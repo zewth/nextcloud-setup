@@ -66,10 +66,6 @@ Reload privileges tables now [Y/n] --> Y
 ```
 
 ### Setting up the Nextcloud Database
-- Check if the ```mariadb.service``` is running
-```bash
-sudo systemctl start mariadb
-```
 + Access to MariaDB
 ```bash
 sudo mariadb

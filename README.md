@@ -1,3 +1,4 @@
+#Make your own self-hosted cloud storage
 ## Benefits
 - More privacy and security
 - Cost-Effectiveness
@@ -18,7 +19,7 @@ sudo apt autoremove
 ```
 - Install all necessary packages (some may be optional based on your requirements)
 ```bash
-sudo apt install neovim wget mariadb-server php php-apcu php-bcmath php-cli php-common php-curl php-gd php-gmp php-imagick php-intl php-mbstring php-mysql php-zip php-xml unzip 
+sudo apt install neovim wget mariadb-server php php-apcu php-bcmath php-cli php-common php-curl php-gd php-gmp php-imagick php-intl php-mbstring php-mysql php-zip php-xml unzip nmap
 ```
 
 #### Update your hostname (Optional)
@@ -103,7 +104,7 @@ mv nextcloud your.domain.name
 ```bash
 sudo chown -R www-data:www-data your.domain.name
 ```
-+ Move the dir to /var/www
++ Move the directory to /var/www
 
 ```bash
 sudo mv your.domain.name /var/www
@@ -121,7 +122,7 @@ sudo a2dissite 000-default.conf
 sudo nvim /etc/apache2/sites-available/your.domain.name.conf
 ```
 
-* Paste this content into the file
+* Insert the provided content into the file, ensuring to modify the part that mentions 'your.domain.name'
 
 ```bash
 <VirtualHost *:80>

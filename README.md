@@ -6,20 +6,20 @@
 - More Control and Customisation
 
 ## Prerequisites
-- Own a computer that could run Linux (x86_x64) [link to my guide to how install arch-linux]
+- Own a computer that could run Linux (x86_x64)
 - Check if your ISP allows you to enable port-forward [Optional]
 - Own a domain [Optional]
 
 ## Initial server setup
 #### Update your archlinux distribution
 ```Bash
-sudo pacman -Syu
-sudo pacman -Qdtq | pacman -Rs -
-sudo pacman -Sc
+sudo apt update
+sudo apt full-upgrade
+sudo apt autoremove
 ```
 - Install all necessary packages (some may be optional based on your requirements)
 ```bash
-sudo pacman -S neovim wget mariadb php php-apcu php-bcmath php-cli php-common php-curl php-gd php-gmp php-imagick php-intl php-mbstring php-mysql php-zip php-xml unzip nmap
+sudo apt install neovim wget mariadb-server php php-apcu php-bcmath php-cli php-common php-curl php-gd php-gmp php-imagick php-intl php-mbstring php-mysql php-zip php-xml unzip nmap
 ```
 
 #### Update your hostname (Optional)
@@ -66,13 +66,9 @@ Reload privileges tables now [Y/n] --> Y
 ```
 
 ### Setting up the Nextcloud Database
-- Run the following command before starting the mariadb.service:
+- Check if the ```mariadb.service``` is running
 ```bash
-mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
-```
-- Now you can start the ```mariadb.service```
-```bash
-sudo systemctl start example.service
+sudo systemctl start mariadb
 ```
 + Access to MariaDB
 ```bash

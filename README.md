@@ -11,7 +11,7 @@
 - Own a domain [Optional]
 
 ## Initial server setup
-#### Update your archlinux distribution
+#### Update your Linux distribution
 ```Bash
 sudo apt update
 sudo apt full-upgrade

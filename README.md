@@ -262,7 +262,7 @@ sudo nvim /var/www/your.domain.name/config/config.php
 - Add your domain name to the `trusted_domains` array
 ![domain_trusted.png](pictures/domain_trusted.png)
 
-+ Now, you can access your Nextcloud through your domain
++ Now, you can access to Nextcloud through your domain
 
 ### TLS certificate
 
